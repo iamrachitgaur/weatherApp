@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- here -->
+
+    <div class="header" id="header">
+
+        <div class="header_logo_menu" >
+          
+            <div class="header_logo" id="header_logo">
+              <img id="logo_image"  src="./image/navigation-compass-svgrepo-com.svg">
+              <p class="logo_text">WeatherSpot</p>  
+            </div>
+          
+
+               <div class="header_menu_bar" id="header_menu_bar">
+                <a class="header_link_btn" href="./">Home</a>
+               
+                 <a class="header_link_btn" href="./about.html">About</a>
+                
+                
+               </div>
+
+               
+        </div>    
+       
+           <div class="hamburger" id="hamburger">
+            <div class="hamburger-box" id="un-active">
+                <div class="hamburger-top" id="hamburger-top"></div>
+              <div class="hamburger-inner" id="hamburger-inner"></div>
+              <div class="hamburger-bottom" id="hamburger-bottom"></div>
+
+            </div>
+          </div>
+        
+    </div>
+
+    <div class="header_responsive_bar" id="header_responsive_bar">
+                
+        <a class="header_link_btn1" href="./">Home</a>
+       
+         <a class="header_link_btn1" href="./about.html">About</a>
+        
+        
+       </div>
+
+    </div>
+
+    <div class="web_container" id="web_container">
+
+        <div class="heading_image_top">
+            <div class="heading_box">
+                <h1><span class="quote_symbol">“</span>Hello!</h1>
+                <h1>Welcome to</h1>
+                <h1><span class="header_brand">WeatherSpot</span><span class="quote_symbol">”</span></h1>
+            </div>
+            <div class="image_box">
+                
+            </div>
+        </div>
+        <div class="heading_form">
+            <h1>Know the Weather of any Spot.</h1>
+               
+                <input type="text" id="locationInput" class="mx-auto my-3 form-control form_textbox" placeholder="Enter a name of City/State">
+                <button class="btn form_button" type="button" id="searchBtn">Search</button>
+                <button class="btn btn-sm form_button" id="getCurrentLocationBtn">My Location Weather</button>
+            
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div id="weatherInfo" class="weather-card p-4 text-center"></div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_text">
+         ©2022 All rights reserved. WeatherSpot. Made By Rachit Gaur ❤️ | Privacy Policy
+         </div>
+         
+         <div class="footer_social_media">
+             
+             <div class="facebook_social_media">
+                 <a href="#">
+                 <?xml version="1.0" encoding="UTF-8"?>
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" width="30px" height="30px">
+                 <g id="surface25191244">
+                 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(54.11765%,54.11765%,54.11765%);fill-opacity:1;" d="M 24 4 L 6 4 C 4.894531 4 4 4.894531 4 6 L 4 24 C 4 25.105469 4.894531 26 6 26 L 16 26 L 16 17 L 13 17 L 13 14 L 16 14 L 16 12.390625 C 16 9.339844 17.484375 8 20.019531 8 C 21.234375 8 21.878906 8.089844 22.179688 8.132812 L 22.179688 11 L 20.453125 11 C 19.375 11 19 11.566406 19 12.71875 L 19 14 L 22.152344 14 L 21.726562 17 L 19 17 L 19 26 L 24 26 C 25.105469 26 26 25.105469 26 24 L 26 6 C 26 4.894531 25.105469 4 24 4 Z M 24 4 "/>
+                 </g>
+                 </svg>
+
+                 </a>
+             </div>
+             <div class="twitter_social_media">
+                 <a href="#">
+                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30" width="30" height="30"><defs><path d="M8.89 4C6.19 4 4 6.19 4 8.89C4 10.11 4 19.89 4 21.11C4 23.81 6.19 26 8.89 26C10.11 26 19.89 26 21.11 26C23.81 26 26 23.81 26 21.11C26 19.89 26 10.11 26 8.89C26 6.19 23.81 4 21.11 4C18.67 4 10.11 4 8.89 4ZM21.17 12.38C21.17 16.36 18.13 20.97 12.58 20.97C10.9 20.97 9.33 20.45 7.97 19.61C8.18 19.61 8.5 19.61 8.71 19.61C10.07 19.61 11.43 19.09 12.48 18.35C11.11 18.35 10.07 17.41 9.65 16.26C9.86 16.26 10.07 16.36 10.17 16.36C10.49 16.36 10.7 16.36 11.01 16.26C9.65 15.95 8.6 14.79 8.6 13.32C9.02 13.53 9.44 13.64 9.96 13.74C9.13 13.01 8.6 12.17 8.6 11.12C8.6 10.6 8.71 10.08 9.02 9.66C10.49 11.44 12.69 12.69 15.2 12.8C15.2 12.59 15.1 12.38 15.1 12.07C15.1 10.39 16.46 9.03 18.14 9.03C18.98 9.03 19.81 9.34 20.34 9.97C21.07 9.87 21.7 9.55 22.22 9.24C22.01 9.97 21.49 10.49 20.86 10.91C21.49 10.81 22.01 10.7 22.64 10.39C22.22 11.02 21.7 11.54 21.17 11.96C21.17 12.07 21.17 12.17 21.17 12.38Z" id="b3FLH1vWbu"></path></defs><g><g><g><use xlink:href="#b3FLH1vWbu" opacity="1" fill="#8a8a8a" fill-opacity="1"></use><g><use xlink:href="#b3FLH1vWbu" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg>
+                 </a>
+             </div>
+             <div class="instagram_social_media">
+                 <a href="#">
+                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 30 30" width="30" height="30"><defs><path d="M10.42 4C6.88 4 4 6.88 4 10.42C4 11.33 4 18.67 4 19.58C4 23.12 6.88 26 10.42 26C11.33 26 18.67 26 19.58 26C23.12 26 26 23.12 26 19.58C26 18.67 26 11.33 26 10.42C26 6.88 23.12 4 19.58 4C17.75 4 12.25 4 10.42 4ZM22.33 8.58C22.33 9.09 21.92 9.5 21.42 9.5C20.91 9.5 20.5 9.09 20.5 8.58C20.5 8.08 20.91 7.67 21.42 7.67C21.92 7.67 22.33 8.08 22.33 8.58ZM20.5 15C20.5 18.03 18.03 20.5 15 20.5C11.97 20.5 9.5 18.03 9.5 15C9.5 11.97 11.97 9.5 15 9.5C18.03 9.5 20.5 11.97 20.5 15ZM11.33 15C11.33 17.03 12.97 18.67 15 18.67C17.03 18.67 18.67 17.03 18.67 15C18.67 12.97 17.03 11.33 15 11.33C12.97 11.33 11.33 12.97 11.33 15Z" id="a3aYTVuTnC"></path></defs><g><g><g><use xlink:href="#a3aYTVuTnC" opacity="1" fill="#8a8a8a" fill-opacity="1"></use><g><use xlink:href="#a3aYTVuTnC" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg>
+                 </a>
+             </div>
+             <div class="linkedin_social_media">
+                 <a href="#">
+                 <?xml version="1.0" encoding="UTF-8"?>
+                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" width="30px" height="30px">
+                 <g id="surface25193759">
+                 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(54.11765%,54.11765%,54.11765%);fill-opacity:1;" d="M 24 4 L 6 4 C 4.894531 4 4 4.894531 4 6 L 4 24 C 4 25.105469 4.894531 26 6 26 L 24 26 C 25.105469 26 26 25.105469 26 24 L 26 6 C 26 4.894531 25.105469 4 24 4 Z M 10.953125 22 L 8.003906 22 L 8.003906 12.507812 L 10.953125 12.507812 Z M 9.449219 11.152344 C 8.496094 11.152344 7.730469 10.378906 7.730469 9.429688 C 7.730469 8.480469 8.5 7.710938 9.449219 7.710938 C 10.398438 7.710938 11.167969 8.484375 11.167969 9.429688 C 11.167969 10.378906 10.398438 11.152344 9.449219 11.152344 Z M 22.003906 22 L 19.054688 22 L 19.054688 17.382812 C 19.054688 16.28125 19.035156 14.867188 17.523438 14.867188 C 15.988281 14.867188 15.753906 16.066406 15.753906 17.304688 L 15.753906 22 L 12.804688 22 L 12.804688 12.507812 L 15.632812 12.507812 L 15.632812 13.804688 L 15.675781 13.804688 C 16.066406 13.058594 17.03125 12.273438 18.464844 12.273438 C 21.453125 12.273438 22.003906 14.238281 22.003906 16.792969 Z M 22.003906 22 "/>
+                 </g>
+                 </svg>
+
+                 </a>
+             </div>
+
+         </div>
+
+    </div> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
